@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t ozione/sendbox:latest . '
+                	sh 'docker build -t ozIone/sendbox:latest . '
                 }
             }
         }
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push ozione/sendbox:latest
+                docker push ozIone/sendbox:latest
                 '''
             }
         }
